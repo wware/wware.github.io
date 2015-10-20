@@ -2,7 +2,7 @@
 layout: post
 title:  "Making your python project pip-installable"
 date:   2015-10-19 18:54:52
-categories: python package pip pypi
+categories: python
 ---
 Some relevant links
 ====
@@ -38,7 +38,7 @@ Heroku instance to run pypiserver.
 [local-pypi]: https://github.com/pypiserver/pypiserver
 [pypirc]: https://docs.python.org/2/distutils/packageindex.html#pypirc
 
-TL; DR
+Why bother
 ====
 
 If you package Python code this way, two benefits accrue. First, pip will install the
