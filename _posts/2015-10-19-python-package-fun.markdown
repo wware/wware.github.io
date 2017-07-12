@@ -48,10 +48,14 @@ and easy to [upload][upload] to a PyPI server.
 
 [upload]: https://docs.python.org/2/distutils/packageindex.html#the-upload-command
 
+Here is `my-awesome-helloworld-script`.
+
 {% highlight python %}
 #!/usr/bin/env python
 print "Hello World"
 {% endhighlight %}
+
+To build my package, I need a `setup.py` file.
 
 {% highlight python %}
 from setuptools import setup
@@ -62,6 +66,8 @@ setup(
     scripts=['helloworld']                  # The name of your scipt, and also the command you'll be using for calling it
 )
 {% endhighlight %}
+
+And here is the process for building the package.
 
 {% highlight bash %}
 $ python setup.py register sdist upload
