@@ -5,9 +5,6 @@ date:   2017-07-12 17:22:00
 categories: python
 ---
 
-How to think about developer tests
-====
-
 The initial version of these notes are taken from a [Github repo][githubrepo] about testing. Later I'll expand this with examples,
 which will be in Python.
 
@@ -33,7 +30,7 @@ feel free to write LOTS of them.
 [Functional][functional] or [integration tests][integration] test larger pieces of functionality spanning multiple classes or modules.
 
 The economics of software testing
-----
+====
 
 I am a big advocate of extensive developer testing. You probably know the rationale, but just to review, [bugs are cheaper to fix][easierfix] when they
 are caught earlier and often the earliest quickest way to catch them is while you are developing the code. Some bugs can be caught while you're still
@@ -43,11 +40,11 @@ You may be worried that writing tests will chew up valuable time in your schedul
 because there are far fewer unpleasant time-consuming surprises later on.
 
 Mocks
-----
+====
 
-Mocks are an important enough topic to merit individual discussion.
+Mocks are an important enough topic to merit individual discussion. (This piece needs to be substantially explored.)
 
-They can be implemented with fixtures or with monkeypatch, or with the standard mock module, and are used to represent anything that you aren't immediately
+They can be implemented with `pytest` fixtures or with `monkeypatch`, or with the standard `mock` module, and are used to represent anything that you aren't immediately
 testing. If you're testing a class or module that ordinarily interacts with others, those others can be mocked out. You'll also want to mock out anything
 that is either slow or unreliable, such as a network connection or a database. In cases where reliability can be an issue, write tests to exercise the
 possible failures.
