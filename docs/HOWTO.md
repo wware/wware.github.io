@@ -19,12 +19,8 @@ project_root/
 
 ## Pushing to GitHub with Material Theme
 
-1. Ensure your `mkdocs.yml` includes the Material theme configuration:
-
-```yaml
-theme:
-  name: material
-```
+1. Ensure your `mkdocs.yml` includes the Material theme configuration.
+   See parent directory.
 
 2. Commit your changes:
 ```bash
